@@ -1,8 +1,10 @@
-let valor = -3
+let valor = 34
 
 if(valor > 0){
     console.log( "positive")
-}else {
+}else if(valor < 0){
     console.log("negative")
+}else{
+    console.log("zero")
 }
     
