@@ -60,12 +60,59 @@
       
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+     //-1 
     let elementoPai = document.body;
     let titulo = document.createElement('h1');
     let texto = document.createTextNode('Exercício 5.2 - JavaScript DOM');
     titulo.appendChild(texto);
     elementoPai.appendChild(titulo);
 
+    //2
+
+    let elementPapai = document.body;
+    let tagMain = document.createElement('main');
+    tagMain.className = ('main-content')
+    elementPapai.appendChild(tagMain);
+
+
+   //3
+
+   let elementPaiSection = document.getElementsByTagName("main");
+   let sectionsTag = document.createElement('section');
+   sectionsTag.className =('center-content');
+   elementPaiSection[0].appendChild(sectionsTag);
+   
+   //4
+
+   let tagPaiSection = document.getElementsByTagName('section');
+   let tagP = document.createElement('p');
+   let textoP = document.createTextNode("O rato roupa do rei de roma, e roeu a roupa de novo do rei de roma!")
+   tagP.appendChild(textoP);
+   tagPaiSection[0].appendChild(tagP);
+
+   //5
+   let tagMainPai = document.getElementsByTagName('main');
+   let tagFilhoSection = document.createElement('section');
+   tagFilhoSection.className = ('left-content');
+   tagMainPai[0].appendChild(tagFilhoSection);
+
+   //6
+   let tagMainPai2 = document.getElementsByTagName('main');
+   let tagSectionFilho2 = document.createElement('section');
+   tagSectionFilho2.className = ('rigth-content');
+   tagMainPai2[0].appendChild(tagSectionFilho2);
+
+   //7
+  
+     
+
+
+
+
+
+
+    
+  
 
     </script>
   </body>
